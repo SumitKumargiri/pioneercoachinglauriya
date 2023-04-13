@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 35%;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    width: 100%;
+    /* height: 500px; */
+    /* border: 2px solid yellow; */
+}
+
+.nav-list {
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+.rightNav {
+    /* border: 2px solid red; */
+    width: 50%;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 18px;
+    /* border: 2px solid blue; */
+    border-radius: 8px;
+
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('head2.jfif');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line {
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+/* section1 parts design */
+#section1{
+    /* border: 2px solid green; */
+    display: inline-block;
+    margin: 10px auto;
+    width: 100%;
+}
+.section11{
+    /* border: 2px solid red; */
+    display: inline-block;
+    /* position: absolute; */
+    width: 40%;
+    padding: 30px;
+}
+.section11 img{
+    width: 100%;
+    margin: 20px auto;
+}
+.section12{
+    /* border: 2px solid blue; */
+    width: 40%;
+    display: inline-block;
+    /* position: absolute; */
+    margin: 0px 25px auto;
+}
+.section12 h1{
+    /* border: 2px solid gray; */
+    text-align: center;
+    font-size: 32px;
+    background-color: rgb(58, 58, 133);
+    color: white;
+}
+.section12 h2{
+    /* border: 2px solid gray; */
+    text-align: center;
+    font-size: 28px;
+    background-image: url('head2.jfif');
+    color:rgb(97, 56, 56);
+}
+.section12 p{
+    /* border: 2px solid blue; */
+    font-style: normal;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* section2 de3sign parts */
+#section2{
+    /* border: 2px solid red; */
+    background-color: rgba(21, 176, 18, 0.696);
+    /* width: 100%; */
+    /* background-size:cover;
+    background-repeat: no-repeat; */
+}
+#section2 h1{
+    /* border: 2px solid blue; */
+    text-align: left;
+    color: rgb(69, 69, 167);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 15px;
+    margin: 10px 40px auto;
+}
+#section2 p{
+    /* border: 2px solid gray; */
+    color: white;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 30px;
+}
+
+/* footer design parts */
+.footer{
+    /* border: 2px solid green; */
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    margin: 20px auto;
+}
+.footer_detail{
+    width: 20%;
+    height: auto;
+    margin: 30px;
+    float: left;
+}
+.footer_detail h1{
+    color: red;
+    /* margin-left: 40px; */
+    /* text-align: center; */
+}
+.footer_detail p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 18px;
+    /* text-align: justify; */
+}
+.footer_detail button {
+    margin-top: 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+.footer_detail ul li{
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+.footer_detail ul li a{
+    color: white;
+    font-size: 20px;
+    font-style:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.social_link{
+    color: rgb(15, 230, 15);
+    margin-left: 0px;
+}
+.social_link img{
+    width: 18%;
+    background-color: blue;
+    color: red;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        width: 100%;
+    }
+
+    .rightNav {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .background{
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 75px;
+        width: 100%;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+    .navbar .logo img {
+        width: 120%;
+    }
+    .choose-display{
+        display:contents;
+        margin: 0px;
+        padding: 0px;
+        width: 90%;
+    }
+    #section1{
+        width: 90%;
+    }
+    .details{
+        width: 80%;
+    }
+    .section11{
+        width: 90%;
+    }
+    #section1 .section11 img{
+        width: 90%;
+    }
+    .section12{
+        width: 90%;
+    }
+    .social_link img{
+        width: 40%;
+    }
+    .btn{
+        margin-bottom: 10px;
+        width: 30%;
+    }
+}
